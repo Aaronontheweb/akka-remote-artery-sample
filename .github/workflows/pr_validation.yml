@@ -39,17 +39,9 @@ jobs:
       - name: "Run Slopwatch analysis"
         run: dotnet slopwatch analyze -d . --fail-on error --stats
 
-      - name: "Update release notes"
-        shell: pwsh
-        run: |
-          ./build.ps1
-
       - name: "dotnet build"
         run: dotnet build -c Release
 
       - name: "dotnet test"
         shell: bash
         run: dotnet test -c Release
-
-      - name: "dotnet pack"
-        run: dotnet pack -c Release -o ./bin/nuget

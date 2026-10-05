@@ -28,9 +28,9 @@ Four projects:
 ## Build system
 
 This repo uses the Akka.NET build system template: central package management
-(`Directory.Packages.props`), SourceLink, coverlet code coverage, release-note
-injection via `build.ps1`, a `.slnx` solution, and GitHub Actions CI that
-builds, tests, packs, and runs **slopwatch** analysis on every PR.
+(`Directory.Packages.props`), SourceLink, coverlet code coverage, a `.slnx`
+solution, and GitHub Actions CI that builds, tests, and runs **slopwatch**
+analysis on every PR.
 
 ```bash
 dotnet tool restore
