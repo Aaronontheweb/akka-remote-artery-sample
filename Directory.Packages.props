@@ -1,0 +1,29 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <!-- Nuget package versions -->
+    <AkkaVersion>1.6.0-beta1</AkkaVersion>
+    <AkkaHostingVersion>1.6.0-beta1</AkkaHostingVersion>
+    <XunitV3Version>3.2.2</XunitV3Version>
+    <XunitRunnerVisualStudioVersion>3.1.5</XunitRunnerVisualStudioVersion>
+    <MicrosoftNetTestSdkVersion>17.14.1</MicrosoftNetTestSdkVersion>
+  </PropertyGroup>
+  <!-- App dependencies -->
+  <ItemGroup>
+    <PackageVersion Include="Akka.Hosting" Version="$(AkkaHostingVersion)"/>
+    <PackageVersion Include="Akka.Remote" Version="$(AkkaVersion)"/>
+    <PackageVersion Include="Akka.Remote.Hosting" Version="$(AkkaHostingVersion)"/>
+    <PackageVersion Include="Akka.Serialization.V2" Version="$(AkkaVersion)"/>
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.11"/>
+  </ItemGroup>
+  <!-- Test dependencies -->
+  <ItemGroup>
+    <PackageVersion Include="xunit.v3" Version="$(XunitV3Version)"/>
+    <PackageVersion Include="xunit.runner.visualstudio" Version="$(XunitRunnerVisualStudioVersion)"/>
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNetTestSdkVersion)"/>
+  </ItemGroup>
+  <!-- SourceLink support for all Akka.NET projects -->
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="10.0.400"/>
+  </ItemGroup>
+</Project>

@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Akka.Serialization.V2" Version="1.6.0-beta1" />
+    <PackageReference Include="Akka.Serialization.V2" />
   </ItemGroup>
 
 </Project>

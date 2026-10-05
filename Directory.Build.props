@@ -1,0 +1,32 @@
+<Project>
+  <PropertyGroup>
+    <Copyright>Copyright © 2015-$([System.DateTime]::Now.Year) Akka.NET Team</Copyright>
+    <Authors>Akka.NET Team</Authors>
+    <Tags>akka, akka.net, remoting, artery, serialization, akkadotnet</Tags>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <PackageReleaseNotes>Example release notes</PackageReleaseNotes>
+  </PropertyGroup>
+  <ItemGroup>
+    <Using Include="Akka.Event" />
+  </ItemGroup>
+  <!-- GitHub SourceLink -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
+  </ItemGroup>
+  <!-- NuGet .nupkg options -->
+  <PropertyGroup>
+    <PackageProjectUrl>https://github.com/akkadotnet/akka-remote-artery-sample</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/akkadotnet/akka-remote-artery-sample</RepositoryUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <!-- Optional: Embed source files that are not tracked by the source control manager in the PDB -->
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <!-- Optional: Build symbol package (.snupkg) to distribute the PDB containing Source Link -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+</Project>

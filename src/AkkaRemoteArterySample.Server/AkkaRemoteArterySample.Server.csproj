@@ -14,10 +14,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Akka.Hosting" Version="1.6.0-beta1" />
-    <PackageReference Include="Akka.Remote" Version="1.6.0-beta1" />
-    <PackageReference Include="Akka.Remote.Hosting" Version="1.6.0-beta1" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
+    <PackageReference Include="Akka.Hosting" />
+    <PackageReference Include="Akka.Remote" />
+    <PackageReference Include="Akka.Remote.Hosting" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
   </ItemGroup>
 
   <ItemGroup>

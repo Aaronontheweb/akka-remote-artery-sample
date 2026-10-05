@@ -11,18 +11,32 @@ Both are configured through **Akka.Hosting**.
 
 ## What's here
 
-Three projects:
+Four projects:
 
 | Project | Role |
 |---------|------|
 | `AkkaRemoteArterySample.Protocol` | The shared protocol: messages (`GreetingRequest` / `GreetingReply`) and the generated serializer. |
 | `AkkaRemoteArterySample.Server` | A host that spins up a remote `GreeterActor` and answers requests over Artery. |
 | `AkkaRemoteArterySample.Client` | A host that sends a `GreetingRequest` to the server over Artery and prints the reply. |
+| `AkkaRemoteArterySample.Tests` | xunit round-trip tests for the generated serializer. |
 
 ## Requirements
 
 - .NET 10 SDK (`global.json` pins it here)
 - Akka.NET `1.6.0-beta1` (resolved from NuGet)
+
+## Build system
+
+This repo uses the Akka.NET build system template: central package management
+(`Directory.Packages.props`), SourceLink, coverlet code coverage, release-note
+injection via `build.ps1`, a `.slnx` solution, and GitHub Actions CI that
+builds, tests, packs, and runs **slopwatch** analysis on every PR.
+
+```bash
+dotnet tool restore
+dotnet build AkkaRemoteArterySample.slnx
+dotnet test AkkaRemoteArterySample.slnx
+```
 
 ## How it works
 
