@@ -4,7 +4,7 @@
     <!-- Nuget package versions -->
     <AkkaVersion>1.6.0-beta1</AkkaVersion>
     <AkkaHostingVersion>1.6.0-beta1</AkkaHostingVersion>
-    <XunitV3Version>3.2.2</XunitV3Version>
+    <XunitV3Version>4.0.1</XunitV3Version>
     <XunitRunnerVisualStudioVersion>3.1.5</XunitRunnerVisualStudioVersion>
     <MicrosoftNetTestSdkVersion>17.14.1</MicrosoftNetTestSdkVersion>
   </PropertyGroup>
